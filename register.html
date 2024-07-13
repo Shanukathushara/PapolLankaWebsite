@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - E-commerce</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .banner {
+           width: 100%;    
+           height: auto;
+           background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(css/background.jpg);
+           background-size: cover;
+           background-position: center;
+           position: relative;
+           z-index: 1;
+        }
+        .registration-container {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            align-items: center;
+            padding-left: 200px;
+            padding-right: 200px;
+        }
+        .registration-container h2 {
+            margin-bottom: 20px;
+        }
+        .registration-container input[type="text"],
+        .registration-container input[type="email"],
+        .registration-container input[type="password"] {
+            width: calc(50% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .registration-container button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .registration-container button:hover {
+            background-color: #45a049;
+        }
+        .registration-container a {
+            display: block;
+            margin-top: 10px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .registration-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="shoppingTag" style="background-color: #FFFFFF; text-align: center;">
+        <marquee behavior="scroll" direction="left" scrollamount="10">Islandwide shipping In 5-7 business days</marquee>
+    </div>
+    <div class="banner">
+        <div class="navbar">
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="Products.php">Products</a></li>
+                <li><a href="ContactUs.php">Contact Us</a></li>
+                <li><a href="AboutUs.php">About</a></li>
+                <li><a href="Cart.php">Cart</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="registration-container">
+        <h2>Create an Account</h2>
+        <form action="http://localhost/papollk/register.php" method="post">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="confirm_password" placeholder="Confirm Password" required><br>
+            <button type="submit">Register</button>
+        </form>
+        <a href="/login">Already have an account? Login</a>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>PapolLanka is your go-to store for the latest smartphones and accessories. We pride ourselves on offering unbeatable deals and excellent customer service.</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <a href="index.php">Home |</a>
+                <a href="Products.html">Products</a><br>
+                <a href="ContactUs.html">Contact Us |</a>
+                <a href="AboutUs.html">About |</a>
+                <a href="Cart.html">Cart</a><br>
+                <a href="register.html">Sign Up |</a>
+                <a href="login.html">Sign In</a>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact Us</h2>
+                <p>Email: info@papollanka.com</p>
+                <p>Phone: +94 123 456 789</p>
+                <p>Address: 123 PapolLanka Street, Colombo, Sri Lanka</p>
+            </div>
+            <div class="footer-section social">
+                <h2>Follow Us</h2>
+                <a href="#"><img height="50px" width="50px" src="FBIcon.png" alt="Facebook"></a>
+                <a href="#"><img height="50px" width="50px" src="twitter.jpeg" alt="Twitter"></a>
+                <a href="#"><img height="50px" width="50px" src="InstaIcon.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 PapolLanka | Designed by 44 Kalliya
+        </div>
+    </footer>
+</body>
+</html>
