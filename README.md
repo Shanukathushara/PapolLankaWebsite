@@ -1,2 +1,0 @@
-# PapolLankaWebsite
-Just a site..
